@@ -20,7 +20,12 @@ public class MultiThreading implements Runnable {
     public void run() {
 
         //System.out.println("Hello world! by "+Thread.currentThread().getName());
-
-        calculateSum();
+        long sum=0;
+        for(long i=0;i<=n;i++)
+        {
+            sum+=i;
+        }
+        System.out.println("sum is: "+sum+" calculated by "+Thread.currentThread().getName());
+        //calculateSum();
     }
 }
