@@ -14,7 +14,7 @@ public class MultiThreading implements Runnable {
         {
             sum+=i;
         }
-        System.out.println("sum is "+sum+" calculated by "+Thread.currentThread().getName());
+        System.out.println("sum is: "+sum+" calculated by "+Thread.currentThread().getName());
     }
     @Override
     public void run() {
